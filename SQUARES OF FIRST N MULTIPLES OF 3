@@ -1,0 +1,41 @@
+# Function to print squares
+square_multiples <- function(n) {
+  
+  # Display heading
+  cat("SQUARES OF MULTIPLES OF 3\n")
+  cat("-----------------------------\n")
+  
+  # Generate multiples of 3
+  multiples <- 3 * (1:n)
+  
+  # Loop through multiples
+  for (i in multiples) {
+    
+    # Calculate square
+    square <- i^2
+    
+    # Display result
+    cat("Multiple:", i,
+        " Square:", square, "\n")
+  }
+  
+  # Display total count
+  cat("-----------------------------\n")
+  cat("Total multiples:", n, "\n")
+}
+
+# Get number of multiples
+n <- as.integer(
+  readline("Enter N: ")
+)
+
+# Validate input
+if (n > 0) {
+  
+  # Call the function
+  square_multiples(n)
+  
+} else {
+  
+  cat("Enter a positive number.\n")
+}
