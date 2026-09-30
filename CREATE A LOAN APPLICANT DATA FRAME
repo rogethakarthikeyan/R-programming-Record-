@@ -1,0 +1,34 @@
+# Create applicant names
+applicant_name <- c(
+  "Arun", "Banu", "Celine", "David", "Esha"
+)
+
+# Create loan amounts
+loan_amount <- c(
+  50000, 75000, 100000, 60000, 90000
+)
+
+# Create approval status
+status <- c(
+  "Approved", "Pending", "Approved",
+  "Rejected", "Approved"
+)
+
+# Create loan data frame
+loan_data <- data.frame(
+  Name = applicant_name,
+  Loan_Amount = loan_amount,
+  Approval_Status = status
+)
+
+# Display the data
+cat("LOAN APPLICANT DETAILS\n")
+cat("-----------------------------\n")
+print(loan_data)
+
+# Display total applicants
+cat("\nTotal Applicants:", nrow(loan_data), "\n")
+
+# Display column names
+cat("Column Names:\n")
+print(names(loan_data))
