@@ -1,0 +1,27 @@
+# Create patient data
+patient_name <- c("Anu", "Bala", "Cathy", "Dinesh", "Esha")
+
+patient_age <- c(21, 25, 30, 28, 24)
+
+blood_group <- c("A+", "B+", "O+", "AB+", "O-")
+
+# Create data frame
+patients <- data.frame(
+  Name = patient_name,
+  Age = patient_age,
+  Blood_Group = blood_group
+)
+
+# Display title
+cat("PATIENT DETAILS\n")
+cat("------------------------\n")
+
+# Display data frame
+print(patients)
+
+# Display number of patients
+cat("\nTotal Patients:", nrow(patients), "\n")
+
+# Display column names
+cat("Columns in the table:\n")
+print(names(patients))
